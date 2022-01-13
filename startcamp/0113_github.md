@@ -31,6 +31,7 @@ git 의 상태
 
 ```markdown
 파일을 깃허브에 올리는 과정
+
 실제폴더 -> 로컬저장소 (git) -> 원격저장소 (github)
 1. git init : 실제폴더에서 깃으로 이동. 깃으로 관리하겠다. 뒤에 master 붙음
   - 이 단계에서 반드시 git status로 확인하기. add 하면 안되는 파일 반드시 걸러내기.
@@ -38,6 +39,13 @@ git 의 상태
   - 이 단계에서 반드시 git status로 확인하기. commit 하면 안되는 파일 반드시 걸러내기.
 3. git commit : 버전 관리.
 4. git log : 커밋 사항 확인하기.
+
+원격저장소(github - remote repository)에 올리기
+1. 원격저장소 정보(url) 등록
+ : git remote add origin url
+2. 로컬 내용을 push 한다.
+ : git push -u origin master
+3. 권한 실행 하고 깃허브에서 확인하기.
 ```
 
 
