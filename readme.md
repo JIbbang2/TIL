@@ -4,5 +4,5 @@
 
 1. [CLI 사용하기](./startcamp/0113_CLI.md)
 2. [마크다운 사용](./startcamp/0113_MARKDOWN.md)
-3. 
+3. [git 기초](./startcamp/0113_git.md)
 
