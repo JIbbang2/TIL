@@ -68,3 +68,65 @@ function App() {
 export default App
 ```
 
+
+
+#### 3. JSX
+
+- JSX란 JavaScript를 확장한 문법으로, UI가 어떻게 생겨야 하는지 설명하기 위해 React와 함께 사용할 것을 권장함
+
+- input 또는 br태그 등을 사용할 때도 태그를 닫아야함
+
+  ```javascript
+  <input /> 
+  <br />
+  ```
+
+- function의 return 내부는 하나의 태그로 감싸기
+
+  - Fragment 
+    - div 태그로 내용을 감싸기 애매할 때 사용함
+    - 이름 없는 태그로, 작성 시에도 브라우저 상에서 따로 별도의 엘리먼트로 나타나지 않는다.
+
+  ```javascript
+  import React from 'react';
+  import Hello from './Hello';
+  
+  function App() {
+    return (
+      <>
+        <Hello />
+        <div>안녕히계세요</div>
+      </>
+    );
+  }
+  
+  export default App;
+  ```
+
+- 변수를 나타낼때는 '{}' 사용
+
+  ```javascript
+  import React from 'react';
+  import Hello from './Hello';
+  
+  function App() {
+    const name = 'react';
+    return (
+      <>
+        <Hello />
+        <div>{name}</div>
+      </>
+    );
+  }
+  
+  export default App;
+  ```
+
+- style 작성하기
+  - 인라인 스타일은 객체형태로 작성하기
+  - -로 구분되어 있는 이름은 camelCase로 작성하기
+- css class 설정하기
+  - className 으로 설정하기
+
+- JSX 내부의 주석
+  - {/* comment */} 의 형태로 작성함. 중괄호로 감싸지 않으면 화면에 보인다.
