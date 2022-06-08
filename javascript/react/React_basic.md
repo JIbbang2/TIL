@@ -137,3 +137,33 @@ export default App
 
 > props란 properties의 줄임말로 어떠한 값을 컴포넌트에 전달해주어야 할 때 사용함
 
+- 값 전달하기
+
+  ```javascript
+  // App.js / name이란 값 전달하기
+  import React from 'react';
+  import Hello from './Hello';
+  
+  function App() {
+    return (
+      <Hello name="react" />
+    );
+  }
+  
+  export default App;
+  ```
+
+- 값 전달 받아 사용하기
+
+  ```javascript
+  // Hello.js
+  import React from 'react';
+  
+  function Hello(props) {
+    return <div>안녕하세요 {props.name}</div> 
+  }
+  
+  export default Hello;
+  ```
+
+  
